@@ -1,12 +1,12 @@
 #define		PULS		2
 #define		PASO		1
-#define		BAURENDT	9600
+#define		BAUDRATE	9600
 #define		PULSA	3
 #define 	VALOR		0
 unsigned int cont;
 void setup()
 {
-  Serial.begin(BAURENDT);
+  Serial.begin(BAUDRATE);
   pinMode(PULS, INPUT_PULLUP);
   pinMode(PULSA, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(PULS), interrupir, FALLING);
